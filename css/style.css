@@ -123,3 +123,12 @@ a:hover {
         margin: 10px 0;
     }
 }
+
+canvas {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: fixed; /* Or absolute, depending on your layout needs */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure it's behind other content, adjust as necessary */
+}
