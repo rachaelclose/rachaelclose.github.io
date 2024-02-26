@@ -6,40 +6,43 @@
 }
 
 body {
-    font-family: 'Helvetica', sans-serif;
-    line-height: 1.6;
+    font-family: 'Georgia', serif;
+    line-height: 1.75;
     margin: 0;
-    padding: 0;
-    background-color: #0000ff;
-    color: #333;
+    padding: 20px;
+    background-color: #f0f8ff;
+    color: #2a2a2a;
+    transition: background-color 0.3s ease;
 }
 
 /* Container */
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
     overflow: hidden;
 }
 
 header {
-    background: #0000ff;
+    background: linear-gradient(135deg, #7b4397, #dc2430);
     color: #fff;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #0779e4 3px solid;
+    border-bottom: 5px solid #a83279;
 }
 
 header a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
 nav {
     padding: 15px;
     margin-top: 5px;
-    background: #333;
+    background: #292929;
     text-align: center;
 }
 
@@ -49,18 +52,25 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #a83279; /* Highlight color when hovered */
 }
 
 /* Main Content Styles */
 main {
     padding: 20px;
     background: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Softened edges */
 }
 
 h1, h2, h3 {
@@ -78,10 +88,10 @@ p {
 
 /* Footer Styles */
 footer {
-    background: #333;
+    background: #292929;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -89,16 +99,17 @@ footer {
 
 /* Add some padding and a light gray background color to links */
 a {
-    color: #333;
+    color: #007bff;
     padding: 5px;
-    background-color: #f4f4f4;
+    background-color: transparent;
     border-radius: 5px;
     text-decoration: none;
-    margin-right: 5px;
+    transition: color 0.3s ease; 
 }
 
 a:hover {
-    background-color: #ddd;
+    color: #0056b3;
+    text-decoration: underline;
 }
 
 /* Responsive Design for smaller devices */
@@ -109,6 +120,6 @@ a:hover {
 
     nav ul li {
         display: block;
-        margin: 5px 0;
+        margin: 10px 0;
     }
 }
