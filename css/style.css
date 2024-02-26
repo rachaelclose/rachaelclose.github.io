@@ -81,6 +81,20 @@ p {
     margin: 10px 0;
 }
 
+
+.profile-pic-container {
+    display: flex;
+    justify-content: center; /* Centers the child elements (the image) horizontally */
+    margin-bottom: 20px; /* Adds some space between the image and the text below */
+}
+
+.profile-pic {
+    width: 50%; /* Adjust based on your preference for size */
+    max-width: 300px; /* Ensures the image is not too large */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 0; /* Ensures the image is square */
+}
+
 /* Utility Classes */
 .text-center {
     text-align: center;
@@ -124,15 +138,3 @@ a:hover {
     }
 }
 
-.profile-pic-container {
-    display: flex;
-    justify-content: center; /* Centers the child elements (the image) horizontally */
-    margin-bottom: 20px; /* Adds some space between the image and the text below */
-}
-
-.profile-pic {
-    width: 50%; /* Adjust based on your preference for size */
-    max-width: 300px; /* Ensures the image is not too large */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 0; /* Ensures the image is square */
-}
