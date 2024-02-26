@@ -4,30 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Rachael Close</title>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-info {
+            padding: 20px;
+        }
+        .project-info h2 {
+            color: #333;
+            margin: 0 0 10px 0;
+        }
+        .project-info p {
+            color: #666;
+            line-height: 1.5;
+            margin: 0;
+        }
+        .code-link {
+            display: block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <!-- Include your shared navigation bar here -->
+        <!-- Navigation Bar Placeholder -->
     </header>
     <main class="container">
-        <h1>Projects</h1>
-        <section>
-            <h2>Cyber-Agricultural Intelligence and Robotics Laboratory</h2>
-            <p>As a Machine-Learning Intern, I fine-tuned the decoder of Meta AI's Segment Anything Model to improve grape callus quality discrimination. I leveraged Docker for isolated environment testing and presented my findings at Cornell Agri-Tech.</p>
-        </section>
-        <section>
-            <h2>Cornell Ann S. Bowers College of CIS</h2>
-            <p>Developed a 2D mapping system and optimization track for a MuSHR race car using ROS and SLAM, enhancing its speed and accuracy under the mentorship of Professor Sarah Dean.</p>
-        </section>
-        <section>
-            <h2>Cornell University Autoboat</h2>
-            <p>Contributed algorithms for path planning and trained a YOLOv5m model for buoy recognition, leading to our status as RoboNation finalists.</p>
-        </section>
-        <section>
-            <h2>Terminal Chess Game</h2>
-            <p>A collaborative project to design a fully functional terminal chess game using OCaml, focusing on advanced programming techniques and rigorous unit testing.</p>
-        </section>
+        <h1>My Projects</h1>
+        <div class="projects-container">
+            <!-- Project Cards (Green Halloween, Terminal Chess Game, Alien Invaders, K-Means Clustering) -->
+
+            <!-- Green Halloween Project -->
+            <div class="project-card">
+                <img src="images/green-halloween.jpg" alt="Green Halloween Project" class="project-image">
+                <div class="project-info">
+                    <h2>Green Halloween</h2>
+                    <p>This project showcases a digital countdown to Halloween, with interactive icons for sustainable candy purchase and eco-friendly costume disposal.</p>
+                    <a href="LINK_TO_CODE" class="code-link">View Code</a>
+                </div>
+            </div>
+
+            <!-- Terminal Chess Game Project -->
+            <div class="project-card">
+                <img src="images/terminal-chess.jpg" alt="Terminal Chess Game" class="project-image">
+                <div class="project-info">
+                    <h2>Terminal Chess Game</h2>
+                    <p>Collaborative design of a terminal-based chess game in OCaml, focusing on advanced programming techniques.</p>
+                    <a href="LINK_TO_CODE" class="code-link">View Code</a>
+                </div>
+            </div>
+
+            <!-- Alien Invaders Project -->
+            <div class="project-card">
+                <img src="images/alien-invaders.jpg" alt="Alien Invaders Project" class="project-image">
+                <div class="project-info">
+                    <h2>Alien Invaders</h2>
+                    <p>An engaging Python game that reimagines the classic Space Invaders with a modern twist.</p>
+                    <a href="LINK_TO_CODE" class="code-link">View Code</a>
+                </div>
+            </div>
+
+            <!-- K-Means Clustering Project -->
+            <div class="project-card">
+                <img src="images/k-means-clustering.jpg" alt="K-Means Clustering Project" class="project-image">
+                <div class="project-info">
+                    <h2>K-Means Clustering</h2>
+                    <p>Implementation of the K-Means clustering algorithm in Python to analyze and categorize data points effectively.</p>
+                    <a href="LINK_TO_CODE" class="code-link">View Code</a>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <!-- Footer content -->
