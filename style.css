@@ -1,140 +1,21 @@
-/* Basic Reset */
-* {
+body,
+html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Georgia', serif;
-    line-height: 1.75;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f8ff;
-    color: #2a2a2a;
-    transition: background-color 0.3s ease;
-}
-
-/* Container */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
-}
-
-header {
-    background: linear-gradient(135deg, #7b4397, #dc2430);
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: 5px solid #a83279;
-}
-
-header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-nav {
-    padding: 15px;
-    margin-top: 5px;
-    background: #292929;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #a83279; /* Highlight color when hovered */
-}
-
-/* Main Content Styles */
-main {
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-    border-radius: 8px; /* Softened edges */
-}
-
-h1, h2, h3 {
-    color: #333;
-}
-
-p {
-    margin: 10px 0;
-}
-
-
-.profile-pic-container {
+    height: 100%;
     display: flex;
-    justify-content: center; /* Centers the child elements (the image) horizontally */
-    margin-bottom: 20px; /* Adds some space between the image and the text below */
+    justify-content: center;
+    align-items: center;
 }
 
-.profile-pic {
-    width: 50%; /* Adjust based on your preference for size */
-    max-width: 300px; /* Ensures the image is not too large */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 0; /* Ensures the image is square */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-/* Utility Classes */
-.text-center {
-    text-align: center;
+.image-container img {
+    max-width: 100%;
+    height: auto;
 }
-
-/* Footer Styles */
-footer {
-    background: #292929;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Add some padding and a light gray background color to links */
-a {
-    color: #007bff;
-    padding: 5px;
-    background-color: transparent;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: color 0.3s ease; 
-}
-
-a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-/* Responsive Design for smaller devices */
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-}
-
