@@ -1,81 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rachael Close - Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="introduction">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hello! I'm Rachael Close, a Computer Science student at Cornell University, College of Engineering, with a passion for machine learning, robotics, and computer vision. This website is a showcase of my projects, publications, and the journey I've embarked on in the realm of technology.</p>
-        </section>
-        <section class="quick-links">
-            <h2>Explore</h2>
-            <ul>
-                <li><a href="about.html">Learn more about me</a></li>
-                <li><a href="projects.html">View my projects</a></li>
-                <li><a href="publications.html">Read my publications</a></li>
-                <li><a href="contact.html">Get in touch</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/rachael-close/">LinkedIn</a> or <a href="https://github.com/rachaelclose">GitHub</a>.</p>
-        <p>© 2024 Rachael Close</p>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script>
-        let scene, camera, renderer, torus;
-
-        function init() {
-            scene = new THREE.Scene();
-            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-            camera.position.z = 30;
-
-            renderer = new THREE.WebGLRenderer({ antialias: true });
-            renderer.setSize(window.innerWidth, window.innerHeight);
-            document.body.appendChild(renderer.domElement);
-
-            const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-            const material = new THREE.MeshStandardMaterial({ color: 0xFF6347, wireframe: false });
-            torus = new THREE.Mesh(geometry, material);
-            scene.add(torus);
-
-            const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-            scene.add(ambientLight);
-
-            const pointLight = new THREE.PointLight(0xffffff, 1);
-            pointLight.position.set(25, 25, 25);
-            scene.add(pointLight);
-
-            animate();
-        }
-
-        function animate() {
-            requestAnimationFrame(animate);
-
-            torus.rotation.x += 0.01;
-            torus.rotation.y += 0.01;
-
-            renderer.render(scene, camera);
-        }
-
-        init();
-    </script>
-    
+    <img src="assets/IMG_4880.jpg" alt="profile-picture">
+    <script src="script.js"></script>
 </body>
+
 </html>
